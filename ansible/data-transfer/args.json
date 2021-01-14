@@ -1,0 +1,8 @@
+{
+    "ANSIBLE_MODULE_ARGS": {
+        "storage_serial": 123456,
+        "storage_ip_fqdn": "192.168.0.1",
+        "username": "test",
+        "password": "test"
+    }
+}

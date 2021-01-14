@@ -1,0 +1,24 @@
+#create/start/stop container
+#docker-compose up --build --remove-orphans
+#docker-compose down
+#docker-compose up
+#get access to container
+#docker exec -ti ansible_ubuntu_1 bash
+#activate virtual environment
+#. venv/bin/activate && . hacking/env-setup
+
+
+version: '3'
+# enforce some dependencies
+services:
+  #  ================================== Ansible ========================================== #}
+  ubuntu:
+    build: 
+      context: ansible
+      dockerfile: Dockerfile
+    hostname: ansible-1
+    volumes:
+      - ./ansible/data-transfer:/opt/ansible/data-transfer
+    #keep the container running
+    stdin_open: true
+    #tty: true
