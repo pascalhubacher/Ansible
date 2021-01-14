@@ -1,4 +1,4 @@
-- name: Testing Get Storage System
+- name: Test Get Storage System
   hosts: localhost
   gather_facts: false
   vars:
