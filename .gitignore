@@ -128,4 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 ansible/data-transfer/test_storage_ports_facts.yml
-ansible/data-transfer/test_storage_ports_facts.yml
+ansible/data-transfer/test_storage_facts.yml
